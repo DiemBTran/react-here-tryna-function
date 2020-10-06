@@ -49,7 +49,7 @@ handleSubmit = (e) => {
                 <br/>
                 <input
                 type= "submit"
-                value= "Submit"
+                value= "Aye G try THIS"
                 onClick={this.handleSubmit} />
               </form>
             </>
