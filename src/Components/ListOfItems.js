@@ -13,6 +13,7 @@ class ListOfItems extends Component {
     // let {budgetList, form} = this.props
     return(
       <>
+      <div>
         <h2>You betta bring: </h2>
         <h4>{this.props.message !== "" ? this.props.message: ""}
         </h4>
@@ -25,7 +26,7 @@ class ListOfItems extends Component {
               <li> chairs = ${this.props.budgetList[4]} </li>
               <li> plates = ${this.props.budgetList[5]} </li>
               </ul>}
-
+        </div>
       </>
     )
   }

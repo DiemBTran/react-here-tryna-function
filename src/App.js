@@ -49,13 +49,19 @@ class App extends Component {
     let guestNum = parseInt(form.guests)
     if (parseInt(form.budget) < 50) {
       // console.log(form.budget)
+      budget = form.budget
+      difference = cost - form.budget
+      admissionFee = (difference / form.guests).toFixed(2)
       message = "That ain't it. Can't be broke and have a function."
-      this.setState({message: message})
+      this.setState({message: message, cost: cost, budget: budget, difference: difference, admissionFee: admissionFee})
       // console.log(budgetList)
     } else if (parseInt(form.budget) === 50) {
       // based on budget and number of people, add items to the budgetList
+      budget = form.budget
       message = "You can afford 1 of everything."
-      this.setState({ message: message })
+      difference = cost - form.budget
+      admissionFee = (difference / form.guests).toFixed(2)
+      this.setState({ message: message, cost: cost, budget: budget, difference: difference })
       // console.log(budgetList)
       // this.setState({ budgetList: [...this.state.budgetList, form] })
     } else if (parseInt(form.budget) >= cost) {
@@ -67,6 +73,8 @@ class App extends Component {
       budgetList.push(guestNum * 1)
       budgetList.push(guestNum * 5)
       budgetList.push(guestNum * 4)
+      difference = cost - form.budget
+      admissionFee = (difference / form.guests).toFixed(2)
       this.setState({ budgetList: budgetList, cost: cost, budget: budget })
       }
       // console.log(`list of items: ${budgetList}`)
@@ -96,13 +104,15 @@ class App extends Component {
             populateList = { this.populateList }
           />
           {this.state.form &&
-            <div>
+            <div id= "flexContainer">
               <ListOfItems
+              id= "budgetList"
               budgetList = { this.state.budgetList }
               message = {this.state.message}
               form = { this.state.form }
               />
               <TotalCost
+              id= "cost"
               difference = {this.state.difference}
               form = { this.state.form }
               budget = {this.state.budget}

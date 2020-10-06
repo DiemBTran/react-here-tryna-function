@@ -12,14 +12,14 @@ class TotalCost extends Component {
     render() {
         return(
             <>
-              <h3>What's the damage?</h3>
-              {/*<h4> {this.props.message !== "" ? "Aint no damage": ""}
-              </h4>*/}
-              {this.props.message === "" &&
+            <div>
+              <h2>What's the damage?</h2>
+              {this.props.message === "" ||
               <div>
                 <p>Budget: {this.props.budget}</p>
                 <p>Cost: {this.props.cost}</p>
                 <p>Difference: {this.props.difference}</p>
+                <br/>
                 <p>
                 You gotta tax each person ${this.props.admissionFee} on cashApp before they can be added to your guest list
                 </p>
@@ -27,6 +27,7 @@ class TotalCost extends Component {
                 style= {{height: "50 px"}}/>
               </div>
             }
+            </div>
             </>
         )
     }

@@ -31,6 +31,7 @@ handleSubmit = (e) => {
                 <br/>
                 <br/>
                 <input
+                id= "budget"
                 name= "budget"
                 type= "number"
                 value= {this.state.budget}
@@ -41,6 +42,7 @@ handleSubmit = (e) => {
                 <br/>
                 <br/>
                 <input
+                id= "guests"
                 name= "guests"
                 type= "number"
                 value= {this.state.guests}
@@ -48,6 +50,7 @@ handleSubmit = (e) => {
                 <br/>
                 <br/>
                 <input
+                id= "button"
                 type= "submit"
                 value= "Aye G try THIS"
                 onClick={this.handleSubmit} />
