@@ -19,6 +19,7 @@ class ListOfItems extends Component {
         </h4>
           {this.props.message === "" &&
           <ul>
+            {/* we had issues trying to map through an array of objects, so we decided to hardcode these for now to finish the MVP */}
               <li> cerveza = ${this.props.budgetList[0]} </li>
               <li> handle = ${this.props.budgetList[1]} </li>
               <li> pizza = ${this.props.budgetList[2]} </li>
