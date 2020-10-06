@@ -28,7 +28,7 @@ handleSubmit = (e) => {
             <>
               {/*this form collects guest count and budget from the user*/}
               <form>
-                <label>How many g's are we tryna drop on this thang? Gotta drop at least fiddy on it, about that green like wasabi.</label>
+                <label id= "label1">How many g's are we tryna drop on this thang? Gotta drop at least fiddy on it, about that green like wasabi.</label>
                 <br/>
                 <br/>
                 <input
@@ -39,7 +39,7 @@ handleSubmit = (e) => {
                   onChange = {this.handleChange} />
                 <br/>
                 <br/>
-                <label>How many of the homies can pull up to the function?</label>
+                <label id= "label2">How many of the homies can pull up to the function?</label>
                 <br/>
                 <br/>
                 <input

@@ -64,7 +64,7 @@ class App extends Component {
       // console.log(form.budget)
       //setting state for budget to take in values from form
       budget = form.budget
-      //if the party is overbudget, you have a difference you need to fund for 
+      //if the party is overbudget, you have a difference you need to fund for
       difference = cost - form.budget
       //if the party is overbudget, you must charge guest's admission fees
       admissionFee = (difference / form.guests).toFixed(2)
@@ -118,7 +118,8 @@ class App extends Component {
       <>
         <div id="app">
           <h1>REACT Here, Tryna FUNCTION</h1>
-          <img src={this.state.e40} />
+          <img
+          src={this.state.e40} />
           <UserInput
             handleFormSubmit={this.handleFormSubmit}
             populateList={this.populateList}

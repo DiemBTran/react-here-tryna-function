@@ -1,6 +1,9 @@
 #app {
-    margin: 10px;
+    margin: 30px;
     text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1581993652881-a637ae83df88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -8,11 +11,23 @@ h1 {
     color: black;
     font-family: 'Permanent Marker', cursive;
     font-size: 80px;
+    text-shadow: 4px 4px 4px white;
 }
 
-li{list-style: none;}
+li{
+  list-style: none;
+  font-size: 18px;
+  color: white;
+}
+form{
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
 
 #flexContainer {
+  color: white;
+  font-size: 20px;
   display: flex;
   text-align: right;
   justify-content: center;
@@ -20,12 +35,21 @@ li{list-style: none;}
 }
 
 #budgetList {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  flex: 1;
+
+}
+#cost {
+  font-size: 50px;
+  color: white;
   text-align: center;
   flex: 1;
 }
-#cost {
-  text-align: center;
-  flex: 1;
+
+#button {
+
 }
 p {
   padding: 20px 10px 10px 10px;
