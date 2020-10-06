@@ -58,17 +58,19 @@ class App extends Component {
   render(){
     return (
       <>
-        <h1>REACT Here, Tryna FUNCTION</h1>
-        <UserInput
-          handleFormSubmit= {this.handleFormSubmit}
-          populateList = { this.populateList }
-        />
-        <ListOfItems
-        partyThings = { this.partyThings }
-        budgetList = { this.state.budgetList }
-        />
-        <TotalCost 
-        form = { this.state.form }/>
+        <div id="app">
+          <h1>REACT Here, Tryna FUNCTION</h1>
+          <UserInput
+            handleFormSubmit= {this.handleFormSubmit}
+            populateList = { this.populateList }
+          />
+          <ListOfItems
+          partyThings = { this.partyThings }
+          budgetList = { this.state.budgetList }
+          />
+          <TotalCost 
+          form = { this.state.form }/>
+        </div>
       </>
     );
   }

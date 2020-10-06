@@ -27,7 +27,7 @@ handleSubmit = (e) => {
         return(
             <>
               <form>
-                <label>How many g's are we tryna drop on this thang? Gotta drop at least fiddy on it.</label>
+                <label>How many g's are we tryna drop on this thang? Gotta drop at least fiddy on it, about that green like wasabi.</label>
                 <br/>
                 <br/>
                 <input
