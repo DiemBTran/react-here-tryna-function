@@ -18,6 +18,7 @@ handleChange = (e) => {
 }
 handleSubmit = (e) => {
   e.preventDefault()
+  this.props.populateList(this.state.form)
   this.props.handleFormSubmit(this.state.form)
 }
 
@@ -26,7 +27,8 @@ handleSubmit = (e) => {
         return(
             <>
               <form>
-                <label>How many g's are we tryna drop on this thang? Gotta drop atleast a hunnid on it</label>
+                <label>How many g's are we tryna drop on this thang? Gotta drop at least fiddy on it.</label>
+                <br/>
                 <br/>
                 <input
                 name= "budget"
@@ -34,13 +36,16 @@ handleSubmit = (e) => {
                 value= {this.state.budget}
                 onChange = {this.handleChange} />
                 <br/>
+                <br/>
                 <label>How many of the homies can pull up to the function?</label>
+                <br/>
                 <br/>
                 <input
                 name= "guests"
                 type= "number"
                 value= {this.state.guests}
                 onChange= {this.handleChange} />
+                <br/>
                 <br/>
                 <input
                 type= "submit"
